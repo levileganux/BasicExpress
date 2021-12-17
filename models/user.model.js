@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment')
 const {Schema} = mongoose;
 
 
@@ -10,6 +11,11 @@ const users = new Schema({
     age:{
         type:Number,
         require: true
+    },
+    createAt:{
+        type:Date,
+        require: true,
+        default: moment 
     }
 })
 

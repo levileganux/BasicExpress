@@ -1,5 +1,6 @@
 doctype html
 header
+  title Práctica
   link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' integrity='sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn' crossorigin='anonymous')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
@@ -10,14 +11,17 @@ h1(style=" text-shadow: #0000; color: #e7baab; text-align: center; text-shadow: 
     .row(style="background:#d1cfc0; height: 600px; border-radius: 25px;")
         .col-6
             p(style="text-align: center;") Nombre.
-            input(type="text" placeholder="Ingrese su nombre.")#nombre.form-control
+            input(type="text" placeholder="Ingrese su nombre.")#name.form-control
         .col-6
-            p(style="text-align: center;") Edad
-            input(type="number" placeholder="Ingrese su edad.")#nombre.form-control
-        .col-6
-            button.btn.btn-secondary.btn-block#agregarBoton Agregar.
-        .col-6
-            button.btn.btn-info.btn-block#EditarButton Editar.
+            p(style="text-align: center;") Edad.
+            input(type="number" placeholder="Ingrese su trabajo.")#age.form-control
+        .col-6.ml-6.mr-6
+            button.btn.btn-secondary.btn-block#add Agregar.
+        .col-6.ml-6.mr-6
+            button.btn.btn-secondary.btn-block#edit Editar.
+        .col-12#usuarios 
+
+
             
 
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
