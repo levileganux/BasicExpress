@@ -29,6 +29,11 @@ $(document).ready(function(){
     })
     $(document.body).on('click','.edit_btn',function(){
         console.log(this.value)
+
+    })
+
+    $('#edit').click(async function(){
+        
     })
     clear() 
     $('#add').click(async function () { 
